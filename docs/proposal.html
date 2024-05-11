@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>CS 4641 Proposal</h1>
+
+<h3>Introduction and Background</h3>
+<p>The stock market's fluctuations are influenced by multiple factors including &#34;political events, economic conditions, and investor psychology [5]&#34;. Recent trends show an increased use of machine learning (ML) techniques to improve market forecast accuracy and efficiency. Strader[1] categorizes recent ML research into four main approaches for stock prediction: artificial neural networks, support vector machines, genetic algorithms combined with other techniques, and hybrid of multiple algorithms. These methods aim to enhance the precision of stock market forecasts. We will be using the first three approaches for our project.
+The dataset is New York Stock Exchange data from 2010 to 2016, which includes the daily prices, prices adjusted for stock split, company descriptions, and underlying metrics drawn from the annual SEC 10K filing.</p>
+
+
+<h3>Problem Definition</h3>
+<ul>
+    <li>Problem</li>
+    <p>Traditionally, market trends were learned through experience, but now, this is impractical due to the market's size and speed. Basic statistical analysis alone is insufficient for making informed decisions in a fast-trending market.</p>
+    <li>Motivation</li>
+    <p>We aim to identify the most accurate market prediction machine learning algorithms that will offer consumers analyses of real-time financial and economic data for making decisions.</p>
+</ul>
+
+
+
+<h3>Methods</h3>
+
+<ul>
+    <li>Data Preprocessing Methods
+        <ul>
+            <li>Pandas Library</li>
+	    <ul>
+            <li>Enables dataset loading and handling missing data by dropping or filling them.</li>
+	    </ul>
+            <li>Matplotlib</li>
+	    <ul>
+            <li>Useful for plotting stock closing prices over time, comparing stocks, or visualizing trade volumes.</li>
+	    </ul>
+	    <li>Numpy Library</li>
+	    <ul>
+            <li>Aids in data standardization, centering by mean removal, and scaling by standard deviation.</li>
+	    </ul>
+        </ul>
+    </li>
+    <li>ML Algorithms</li>
+        <ul>
+            <li>Neural network algorithm</li>
+	    <ul>
+            <li>Neural networks use historical stock data (like open and close prices, trading volume) to predict future prices, employing techniques like Genetic Algorithm - Artificial Neural Network and Harmony Search - Artificial Neural Network for stock market forecasting.</li>
+	    </ul>
+            <li>Support vector Machine algorithm (Supervised)</li>
+	    <ul>
+            <li>SVM is a supervised learning algorithm used for classification or regression, including predicting stock market price directions.</li>
+	    </ul>
+	    <li>LSTM algorithm </li>
+	    <ul>
+            <li>LSTM's ability to remember patterns for long periods makes it effective for predicting stock prices using historical data. Nabipour found that deep LSTM with an embedded layer performed better than LSTM with automatic encoding [5].</li>
+	    </ul>
+            <li>Random Forest Algorithm</li>
+	    <ul>
+            <li>Random Forest is an ensemble method combining weak models into a strong one, capable of managing large, complex data sets. It's useful for analyzing vast stock price data to identify key variables for classification.</li>
+	    </ul>
+	    <li>Radial Basis Function</li>
+	    <ul>
+            <li>A Radial Basis Function (RBF) is a mathematical function that computes the similarity between data points in a multidimensional space. It's often used in machine learning for tasks such as interpolation, approximation, and classification [4].</li>
+	    </ul>
+        </ul>
+</ul>
+
+<h3>(Potential) Results and Discussion</h3>
+<p>The performance metrics include Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE) to measure prediction accuracy, R<sup>2</sup> to gauge the model's explanatory power, and Precision and Recall for classification accuracy. The goal is to minimize MAE and RMSE for close-to-actual predictions, maximize R<sup>2</sup> for high predictive relevance, and achieve high Precision and Recall for reliable classification. Achieving the goals for these metrics will indicate that the model is capable of making accurate and reliable stock market predictions.</p>
+
+<h3>Reference</h3>
+
+<p>
+[1] T. J. Strader et al, &#34;Machine Learning Stock Market Prediction Studies: Review and Research Directions,&#34; Journal of International Technology and Information Management, vol. 28, (4), pp. 63-83, 2019. Available: https://www.proquest.com/scholarly-journals/machine-learning-stock-market-prediction-studies/docview/2419750880/se-2.<br />
+<br />
+[2] D. Sheth and M. Shah, &#34;Predicting stock market using machine learning: best and accurate way to know future stock prices,&#34; International Journal of Systems Assurance Engineering and Management, vol. 14, no. 1, pp. 1-18, Jan. 2023, doi: 10.1007/s13198-022-01811-1.<br />
+<br />
+[3] A. Khan et al., &#34;A performance comparison of machine learning models for stock market prediction with novel investment strategy,&#34; PLOS ONE, vol. 18, no. 9, p. e0286362, Sep. 2023, doi: 10.1371/journal.pone.0286362.<br />
+<br />
+[4] K. S. R. Vanukuru, &#34;Stock Market Prediction Using Machine Learning,&#34; International Research Journal of Engineering and Technology (IRJET), vol. 05, no. 10, pp. 1032, Nov. 2018, DOI: 10.13140/RG.2.2.12300.77448.<br />
+<br />
+[5] Nabipour, M.; Nayyeri, P.; Jabani, H.; Mosavi, A.; Salwana, E.; S., S. Deep Learning for Stock Market Prediction. Entropy 2020, 22, 840. https://doi.org/10.3390/e22080840
+https://ieeexplore.ieee.org/abstract/document/7783235
+https://scholarworks.lib.csusb.edu/jitim/vol28/iss4/3/
+</p>
+
+<h2>Gantt Chart</h2>
+<p>https://docs.google.com/spreadsheets/d/1gdDA0MfhDgKv55N_eectzp0srOznWuNAZxiQP6nlWtM/edit?usp=sharing</p>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+<h2>Contribution Table</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Proposal Contributions</th>
+  </tr>
+    <tr>
+    <td>Dongbin Seo</td>
+    <td>Introduction &#38; Background, Potential Result &#38; Discussion</td>
+  </tr>
+  <tr>
+    <td>Seohee Yoon</td>
+    <td>Potential Dataset, Methods, Github Page</td>
+  </tr>
+  <tr>
+    <td>Moungsung Im</td>
+    <td>Problem Definition, Methods</td>
+  </tr>
+  <tr>
+    <td>Jared Samuel Stanton</td>
+    <td>Video Creation &#38; Recording</td>
+  </tr>
+  <tr>
+    <td>Matthew James Rowe</td>
+    <td>Video Creation &#38; Recording</td>
+
+</table>
+
+</body>
+</html>
+
+
+
+</body>
+</html>
